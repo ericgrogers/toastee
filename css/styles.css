@@ -1,0 +1,39 @@
+h1, h2 {
+	text-align: center;
+}
+button {
+	width: 200px;
+	height: 50px;
+	border: none;
+	color: white;
+}
+button#btn {
+	background: #3AAAFF;
+}
+button#btn1 {
+	background: #33D594;
+}
+button#btn2 {
+	background: #E5564E;
+}
+button#btn3 {
+    background: #FFBB00;
+    color: yellow;
+}
+#testy {
+	position: fixed;
+	top: 0;
+	right: 20px;
+}
+#buttons {
+	width: 620px;
+	height: 50px;
+	margin: 50px auto;
+}
+article {
+	width: 600px;
+	margin: 30px auto;
+}
+code {
+	color: blue;
+}

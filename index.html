@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Toastee Plugin Example</title>
+
+        <link href="css/styles.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="testy" style="margin: 0 auto;"></div>
+
+        <h1>Toastee toast style messages plugin example</h1>
+        <h2> Click a button to see a demo.</h2>
+        
+        <div id="buttons">
+            <button id="btn">Click for Default</button>
+            <button id='btn1'>Click for Success</button>
+            <button id="btn2">Click for Error</button>
+        </div>
+
+        <article>
+            <h3>Toastee is a super light-weight jQuery plugin (4kb) for creating simple toast-like messages.</h3>
+            <p>Toastee comes with a few options built in, including: <br/>
+            <ul>
+                <li>Toast Type: default (info), error, and success toasts.</li>
+                <li>Custom toast heading.</li>
+                <li>Custom toast message.</li>
+                <li>Custom text color.</li>
+                <li>Custom width and height.</li>
+                <li>Custom fade-out timing.</li>
+                <li>Mouse over a toast to keep it visible and the fade-out will restart when you mouse out.</li>
+            </ul></p>
+
+            <p>To use Toastee, include jQuery and the toastee plugin on your page and then bind it to an element.</p>
+            <pre>
+            <code>
+                
+                <strong style="color: red;">/*  In your HTML  */</strong>
+
+                <p style="color: green">&lt;div id="my-toast-location" style="position: fixed; top; 0; right: 20px;"&gt;&lt;/div&gt;</p>
+
+
+                
+                <strong style="color: red;">/*  In your JS file  */</strong>
+
+                (function($){
+
+                    $('#my-toast-location').toastee();
+
+                })(jQuery);
+            </code>
+            </pre>
+
+            <p>Each toast type can have it's own set of options. <br/>
+            <button id="btn3">Check it!</button>
+
+            <pre>
+                <code>
+                    (function($){
+
+                    $('#my-toast-location').toaste({
+                        type: 'success',
+                        header: 'Toastee',
+                        message: 'Got Butter?',
+                        color: 'yellow',
+                        background: '#FFBB00',
+                        width: 100,
+                        height: 200,
+                        fadeout: 500
+                    });
+                    })(jQuery);
+                </code>
+            </pre>
+        </article>
+
+        <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="js/plugins/jquery.toastee.0.1.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+    </body>
+</html>
